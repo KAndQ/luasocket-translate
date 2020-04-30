@@ -1,5 +1,27 @@
 # TCP (in socket) API
 
+- [TCP (in socket) API](#tcp-in-socket-api)
+    - [socket.tcp()](#sockettcp)
+    - [socket.tcp6()](#sockettcp6)
+    - [server:accept()](#serveraccept)
+    - [master:bind(address, port)](#masterbindaddress-port)
+    - [*:close()](#close)
+    - [master:connect(address, port)](#masterconnectaddress-port)
+    - [client:getpeername()](#clientgetpeername)
+    - [*:getsockname()](#getsockname)
+    - [*:getstats()](#getstats)
+    - [master:listen(backlog)](#masterlistenbacklog)
+    - [client:receive([pattern [, prefix]])](#clientreceivepattern--prefix)
+    - [client:send(data [, i [, j]])](#clientsenddata--i--j)
+    - [*:setoption(option [, value])](#setoptionoption--value)
+    - [*:getoption(option)](#getoptionoption)
+    - [*:setstats(received, sent, age)](#setstatsreceived-sent-age)
+    - [*:settimeout(value [, mode])](#settimeoutvalue--mode)
+    - [client:shutdown(mode)](#clientshutdownmode)
+    - [*:dirty()](#dirty)
+    - [*:getfd()](#getfd)
+    - [*:setfd(fd)](#setfdfd)
+
 ## socket.tcp()
 
 > Creates and returns an IPv4 TCP master object. A master object can be transformed into a server object with the method listen (after a call to bind) or into a client object with the method connect. The only other method supported by a master object is the close method.
