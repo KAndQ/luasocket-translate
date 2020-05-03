@@ -1,5 +1,22 @@
 # Socket
 
+- [Socket](#socket)
+    - [socket.bind(address, port [, backlog])](#socketbindaddress-port--backlog)
+    - [socket.connect46](#socketconnect46)
+    - [socket._DEBUG](#socket_debug)
+    - [socket.gettime()](#socketgettime)
+    - [socket.headers.canonic](#socketheaderscanonic)
+    - [socket.newtry(finalizer)](#socketnewtryfinalizer)
+    - [socket.protect(func)](#socketprotectfunc)
+    - [socket.select(recvt, sendt [, timeout])](#socketselectrecvt-sendt--timeout)
+    - [socket.sink(mode, socket)](#socketsinkmode-socket)
+    - [socket.skip(d [, ret1, ret2 ... retN])](#socketskipd--ret1-ret2--retn)
+    - [socket.sleep(time)](#socketsleeptime)
+    - [socket.source(mode, socket [, length])](#socketsourcemode-socket--length)
+    - [socket._SETSIZE](#socket_setsize)
+    - [socket.try(ret1 [, ret2 ... retN])](#sockettryret1--ret2--retn)
+    - [socket._VERSION](#socket_version)
+
 > The socket namespace contains the core functionality of LuaSocket.
 
 socket 命名空间包括 LuaSocket 的核心功能.

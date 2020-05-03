@@ -1,5 +1,21 @@
 # UDP
 
+- [UDP](#udp)
+    - [socket.udp()](#socketudp)
+    - [socket.udp6()](#socketudp6)
+    - [*:close](#close)
+    - [connected:getpeername()](#connectedgetpeername)
+    - [*:getsockname()](#getsockname)
+    - [*:receive](#receive)
+    - [unconnected:receivefrom([size])](#unconnectedreceivefromsize)
+    - [*:getoption()](#getoption)
+    - [connected:send(datagram)](#connectedsenddatagram)
+    - [unconnected:sendto(datagram, ip, port)](#unconnectedsendtodatagram-ip-port)
+    - [*:setpeername](#setpeername)
+    - [unconnected:setsockname(address, port)](#unconnectedsetsocknameaddress-port)
+    - [*:setoption](#setoption)
+    - [*:settimeout](#settimeout)
+
 ## socket.udp()
 
 > Creates and returns an unconnected IPv4 UDP object. Unconnected objects support the sendto, receive, receivefrom, getoption, getsockname, setoption, settimeout, setpeername, setsockname, and close. The setpeername is used to connect the object.
